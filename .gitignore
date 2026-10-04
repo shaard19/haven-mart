@@ -1,0 +1,13 @@
+/config/database.php
+/.env
+/.env.*
+!/.env.example
+/vendor/
+/logs/
+/*.log
+/backups/
+/backup/
+*.sql
+*.sql.gz
+.DS_Store
+Thumbs.db
