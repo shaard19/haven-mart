@@ -755,15 +755,12 @@ try {
     }
 
     header(
-        'Location: ' .
-        APP_URL .
-        '/sales/view.php?id=' .
-        $saleId .
-        '&success=' .
-        urlencode($message)
-    );
-
-    exit;
+    'Location: ' .
+    APP_URL .
+    '/pos/receipt.php?id=' .
+    $saleId
+);
+exit;
 
 } catch (Throwable $e) {
     if ($pdo->inTransaction()) {
